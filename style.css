@@ -2,20 +2,33 @@
  
 @import url('https://fonts.googleapis.com/css2?family=Freehand&family=Handlee&family=Kristi&family=Stylish&display=swap');
  
-:root {
-    --background-color-light: #ffffff;
-    --text-color-light: #2d2a2a;
-    --background-color-dark: #292929;
-    --text-color-dark: #ffffff;
-}
+
+    :root {
+        --color-light-bg: #f0f0f5;
+        --color-light-text: #333;
+        --color-light-accent: #dfdde1;
+
+        --color-dark-bg: #121212;
+        --color-dark-text: #e0e0e0;
+        --color-dark-accent: #bb86fc;
+    }
+
+    .dark-mode {
+        background-color: var(--color-dark-bg);
+        color: var(--color-dark-text);
+    }
+
+    .dark-mode .mode-toggle {
+        color: var(--color-dark-accent);
+    }
 
  *{
     scroll-behavior: smooth;
  }
 
 body {
-    background-color: rgb(20, 19, 19);
-    color: white;
+    background-color:var(--color-light-bg);;
+    color: var(--color-light-text);
     transition: background-color 0.3s, color 0.3s;
     font-family: "Handlee", cursive;
     font-weight: 400;
@@ -41,7 +54,7 @@ button{
     cursor: pointer;
     margin-top: 20px;
     text-decoration: none;
-    color: white;
+    color: var(--color-light-accent);
      
 }
 
@@ -108,11 +121,12 @@ button{
     box-shadow: 2px 2px 5px black;
 }
 .title-section .my-img img{
-    height: 350px ;
-    width: 400px ;
-    filter: grayscale(50);
-    box-shadow: 1px 1px 2px grey;
+    height: 320px ;
+    width: 360px ;
+    /* filter: grayscale(50); */
+    box-shadow: 1px 1px 5px grey;
     border-radius: 50%;
+    
 }
 
 #section2{
@@ -145,6 +159,7 @@ button{
   justify-content: center;
   align-items: center;
   /* box-shadow: 2px 2px 5px black; */
+  color:  var(--color-light-text);
 }
 .skill-card img{
     height: 80px;
@@ -175,13 +190,14 @@ button{
     border-radius: 5px;
     text-align: left;
     padding: 5px 15px;
+    color: var(--color-dark-text);
 }
 
 .project a{
     text-decoration: none;
     background: rgb(20, 19, 19);
     border: 1px solid rgb(30, 31, 31);
-    color: white;
+    color:  var(--color-light-text);
     padding: 3px 15px;
     border-radius: 5px;
     float: right;
@@ -199,6 +215,7 @@ button{
 /* section 4 */
 #section4{
     width: 100%;
+    color: var(--color-dark-text);;
     
 }
 .images{
@@ -225,6 +242,7 @@ button{
     padding: 100px;
     display: flex;
     justify-content: space-between;
+    color: var(--color-dark-text);;
 }
 .social-media{
     padding: 15px;
@@ -280,9 +298,20 @@ button{
     padding: 10px;
 }
 
-.menu-icon {
+.menu-icon{
     display: none;
 }
+
+.mode-toggle{
+    border: none;
+    background: transparent;
+    margin-top: -1px;
+    color: var(--color-dark-accent);
+}
+.mode-toggle i{
+    font-size: 25px;
+}
+
 
 #contact-me img{
     display: none;
@@ -290,7 +319,13 @@ button{
 
 
 
+#section5{
+   color: var(--color-dark-text);
+}
 
+.footer{
+    color: var(--color-dark-text);
+}
 
 /* @media queries */
 
