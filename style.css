@@ -121,14 +121,12 @@ button{
     box-shadow: 2px 2px 5px black;
 }
 
-#image img{
-    height: 35vh;
-    width: 90vw;
-    background: var(--color-light-bg);
-    border-radius: 45%;
-    box-shadow: 5px 5px 10px lightgrey  ;
+.myImage img{
+    height: 60vh;
+    width: 40vw;
+    border-radius: 50%;
+    box-shadow: 5px 5px 12px lightgrey;
 }
-
 
 #section2{
     display: flex;
@@ -370,9 +368,17 @@ button{
     transition: 0.5s ease;
    }
 
+   
+.myImage img{
+    height: 35vh;
+    width: 80vw;
+    border-radius: 50%;
+    box-shadow: 5px 5px 12px lightgrey;
+}
 
    .title-section{
     margin-top: 1vh;
+    
    }
    .title h1{
     font-size: 12vw;
