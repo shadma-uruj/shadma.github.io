@@ -120,14 +120,15 @@ button{
 .title button:hover{
     box-shadow: 2px 2px 5px black;
 }
-.title-section .my-img img{
-    height: 320px ;
-    width: 360px ;
-    /* filter: grayscale(50); */
-    box-shadow: 1px 1px 5px grey;
-    border-radius: 50%;
-    
+
+#image img{
+    height: 35vh;
+    width: 90vw;
+    background: var(--color-light-bg);
+    border-radius: 45%;
+    box-shadow: 5px 5px 10px lightgrey  ;
 }
+
 
 #section2{
     display: flex;
